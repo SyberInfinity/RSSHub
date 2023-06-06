@@ -11,11 +11,11 @@ services:
             - '1200:1200'
         environment:
             NODE_ENV: production
-            CACHE_TYPE: redis
+            CACHE_TYPE: memory 
             REDIS_URL: 'redis://redis:6379/'
             PUPPETEER_WS_ENDPOINT: 'ws://browserless:3000'  # marked
         depends_on:
-            - redis
+            #- redis
             - browserless  # marked
 
     browserless:  # marked
@@ -26,11 +26,11 @@ services:
             hard: 0  # marked
             soft: 0  # marked
 
-    redis:
-        image: redis:alpine
-        restart: always
-        volumes:
-            - redis-data:/data
+    #redis:
+    #    image: redis:alpine
+    #    restart: always
+    #    volumes:
+    #        - redis-data:/data
 
-volumes:
-    redis-data:
+#volumes:
+#    redis-data:
