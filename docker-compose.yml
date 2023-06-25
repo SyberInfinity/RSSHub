@@ -26,6 +26,10 @@ services:
           core:  # marked
             hard: 0  # marked
             soft: 0  # marked
+        environment:
+            PROXY_SERVER: http://pr.lunaproxy.com:12233
+            PROXY_USERNAME: dyc02
+            PROXY_PASSWORD: 123456
 
     #redis:
     #    image: redis:alpine
