@@ -103,6 +103,12 @@ pageClass: routes
 
 <Route author="LogicJake" example="/dekudeals/most-wanted" path="/dekudeals/:type" :paramsDesc="['分类名称，可在 URL 中查看']"/>
 
+## Dorohedoro
+
+### News
+
+<Route author="nczitzk" example="/dorohedoro/news" path="/dorohedoro/news" />
+
 ## Epic Games Store
 
 ### 免费游戏
@@ -616,6 +622,12 @@ News 的数据来自 <https://warthunder.com/en/news/>
 ### 最新消息
 
 <Route author="DIYgod" example="/mhw/news" path="/mhw/news" radar="1" rssbud="1"/>
+
+## 盒心光环
+
+### 资讯
+
+<Route author="XXY233" example="/xboxfan/news" path="/xboxfan/news" radar="1"/>
 
 ## 剑网 3
 
